@@ -1,0 +1,41 @@
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #1a1a1a 0%,
+    #2a2a2a 20%,
+    #3a3a3a 30%,
+    #4a4a4a 35%,
+    #5a5a5a 40%,
+    #7a7a7a 42%,
+    #9a9a9a 45%,
+    #bbb 47%,
+    #ddd 49%,
+    #eee 51%,
+    rgba(240, 240, 240, 1) 52%,
+    rgba(255, 255, 255, 0.9) 53%,
+    rgba(240, 240, 240, 1) 54%,
+    #eee 55%,
+    #ddd 56%,
+    #bbb 58%,
+    #9a9a9a 60%,
+    #7a7a7a 63%,
+    #5a5a5a 65%,
+    #4a4a4a 70%,
+    #3a3a3a 75%,
+    #2a2a2a 80%,
+    #1a1a1a 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: -100% center;
+  }
+}

@@ -1,13 +1,14 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: "http://localhost:3000",
   title: "cousinkode",
   description: "",
   keywords: ["Next.js", "SEO", "Tailwind", "React"],
   openGraph: {
     title: "Mi Sitio Web",
     description: "Diseñamos y Desarrollamos paginas web",
-    url: "https://midominio.com",
+    url: "http://localhost:3000",
     siteName: "cousinkode",
     images: [
       {
@@ -20,7 +21,6 @@ export const metadata = {
     type: "website",
   },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="es">

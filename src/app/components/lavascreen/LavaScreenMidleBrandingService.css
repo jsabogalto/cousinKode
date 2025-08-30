@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer components {
+  .blob_midle_component_branding {
+    @apply absolute rounded-full bg-gradient-to-br from-[#D3BFFF];
+  }
+  .blob_midle_component_branding.top {
+    @apply rounded-full;
+  }
+  .blob_midle_component_branding.bottom {
+    @apply rounded-full;
+  }
+  .blob_midle_component_branding  {
+    @apply px-4;
+  }
+}
+
+@layer utilities {
+  @keyframes wobble {
+    0% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    }
+    50% {
+      border-radius: 38% 52% 75% 36% / 50% 40% 50% 60%;
+    }
+    100% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    }
+  }
+
+@keyframes blob-one-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(600%); }
+  }
+  @keyframes blob-two-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(420%); }
+  }
+  @keyframes blob-three-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(305%); }
+  }
+  @keyframes blob-four-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-465%); }
+  }
+  @keyframes blob-five-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-700%); }
+  }
+  @keyframes blob-six-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-700%); }
+  }
+  @keyframes blob-seven-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-300%); }
+  }
+
+  .animate-blob-one-horizontal {
+    animation: wobble 4s ease-in-out alternate infinite, blob-one-horizontal 18s ease-in-out infinite;
+  }
+  .animate-blob-two-horizontal {
+    animation: wobble 5s ease-in-out alternate infinite, blob-two-horizontal 22s ease-in-out infinite;
+  }
+  .animate-blob-three-horizontal {
+    animation: wobble 6s ease-in-out alternate infinite, blob-three-horizontal 16s ease-in-out infinite;
+  }
+  .animate-blob-four-horizontal {
+    animation: wobble 8s ease-in-out alternate infinite, blob-four-horizontal 16s ease-in-out infinite;
+  }
+  .animate-blob-five-horizontal {
+    animation: wobble 9s ease-in-out alternate infinite, blob-five-horizontal 32s ease-in-out infinite;
+  }
+  .animate-blob-six-horizontal {
+    animation: wobble 10s ease-in-out alternate infinite, blob-six-horizontal 12s ease-in-out infinite;
+  }
+  .animate-blob-seven-horizontal {
+    animation: wobble 11s ease-in-out alternate infinite, blob-seven-horizontal 32s ease-in-out infinite;
+  }
+}
+
